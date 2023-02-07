@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>사용자 정보 관리 사이트</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
-
     <!-- 화면 상단에 나타낼 요소-->
     <header>
-      <nav>
+      <nav class="header-nav">
         <div>
           <a href="#"><h1>SSAFY USERS</h1></a>
         </div>
@@ -19,12 +19,12 @@
 
     <div>
       <!-- 메인 컨텐츠 -->
-      <main>
-        <div>
+      <main class="container">
+        <div class="login-page">
           <h1>Welcome</h1>
-          <div">
-          <!--로그인 요청 처리를 위한 입력 받기-->
-            <form>
+          <div class="form">
+            <!--로그인 요청 처리를 위한 입력 받기-->
+            <form class="login-form">
               <!-- id, password 에 맞는 입력 , 타입 설정-->
               <input type="text" placeholder="ID" />
               <input type="password" placeholder="password" />
@@ -35,11 +35,10 @@
         </div>
       </main>
     </div>
-    
 
-      <!-- 리스트 태그-->
-      <footer>
-      <ul>
+    <!-- 리스트 태그-->
+    <footer>
+      <ul class="footer-list">
         <li><a href="#">개인정보 처리방침</a></li>
         <li><a href="#">이용 약관</a></li>
         <li><a href="#">오시는 길</a></li>

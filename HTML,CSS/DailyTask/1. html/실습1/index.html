@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>자동차정보사이트</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <!-- 화면의 위에 올 내용 -->
     <header>
-      <nav>
+      <nav class="header-nav">
         <div>
           <a href="#">자동차관리</a>
         </div>
         <div>
-          <!-- 데이터를 전송하기 위한 태그 -->
           <form action="#">
-            <!-- input 태그 속성을 작성하시오. -->
             <input type="text" placeholder="모델명을 입력하세요" />
             <input type="submit" value="검색" />
           </form>
@@ -29,113 +27,114 @@
         </div>
       </nav>
     </header>
-    <!-- 화면의 중간에 올 내용 -->
-    <main>
-      <!-- 주요 내용 -->
-      <section>
+    <main class="content">
+      <section class="content-car-list">
         <h2>자동차 목록</h2>
         <br />
-        <ul>
+        <ul class="content-car-list-ul">
           <li>
-            <div>
+            <div class="list-item">
               <div>
-                <!-- 이미지 위치 넣기 -->
-                <img src="img\Sonata.jpg" alt="ALT TEST" />
+                <img src="img/Sonata.jpg" alt="" />
               </div>
-              <div>
+              <div class="car-info">
                 <div>
                   <div>KMHXX00XXXX000000</div>
                   <div>소나타</div>
                   <div>dark blue</div>
                   <div>20000 km</div>
                 </div>
+                <button class="like-btn">찜</button>
               </div>
             </div>
           </li>
           <li>
-            <div>
+            <div class="list-item">
               <div>
-                <img src="img\K5.JPG" alt="" />
+                <img src="img/K5.jpg" alt="" />
               </div>
-              <div>
+              <div class="car-info">
                 <div>
                   <div>KNHXX00XXXX000000</div>
                   <div>K5</div>
                   <div>dark blue</div>
                   <div>35000 km</div>
                 </div>
+                <button class="like-btn">찜</button>
               </div>
             </div>
           </li>
           <li>
-            <div>
+            <div class="list-item">
               <div>
-                <img src="img\Avante.JPG" alt="" />
+                <img src="img/Avante.jpg" alt="" />
               </div>
-              <div>
+              <div class="car-info">
                 <div>
                   <div>KMHXX00XXXX000001</div>
                   <div>아반떼</div>
                   <div>gray</div>
                   <div>1000 km</div>
                 </div>
+                <button class="like-btn">찜</button>
               </div>
             </div>
           </li>
           <li>
-            <div>
+            <div class="list-item">
               <div>
-                <img src="img\Sorento.JPG" alt="" />
+                <img src="img/Sorento.jpg" alt="" />
               </div>
-              <div>
+              <div class="car-info">
                 <div>
                   <div>KNHXX00XXXX000001</div>
                   <div>쏘렌토</div>
                   <div>black</div>
                   <div>100000 km</div>
                 </div>
+                <button class="like-btn">찜</button>
               </div>
             </div>
           </li>
           <li>
-            <div>
+            <div class="list-item">
               <div>
-                <img src="img\Santafe.JPG" alt="" />
+                <img src="img/Santafe.jpg" alt="" />
               </div>
-              <div>
+              <div class="car-info">
                 <div>
                   <div>KMHXX00XXXX000002</div>
                   <div>산타페</div>
                   <div>black</div>
                   <div>150000 km</div>
                 </div>
+                <button class="like-btn">찜</button>
               </div>
             </div>
           </li>
           <li>
-            <div>
+            <div class="list-item">
               <div>
-                <img src="img\Ray.JPG" alt="" />
+                <img src="img/Ray.jpg" alt="" />
               </div>
-              <div>
+              <div class="car-info">
                 <div>
                   <div>KNHXX00XXXX000002</div>
                   <div>레이</div>
                   <div>aqua</div>
                   <div>3000 km</div>
                 </div>
+                <button class="like-btn">찜</button>
               </div>
             </div>
           </li>
         </ul>
       </section>
-      <!-- 보조 내용 -->
-      <aside>
+      <aside class="content-car-like">
         <h3>찜 리스트</h3>
         <div>아직 찜한 자동차가 없습니다...</div>
       </aside>
     </main>
-    <!-- 화면의 마지막에 올 내용 -->
     <footer>
       <ul class="footer-list">
         <li><a href="#">개인정보 처리방침</a></li>
@@ -145,4 +144,5 @@
       </ul>
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>

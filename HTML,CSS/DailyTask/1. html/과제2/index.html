@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie List</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header>
       <div>
-        <h1><a href="#">영화관리</a></h1>
+        <h3><a href="#">영화관리</a></h3>
       </div>
       <form action="#">
         <input type="text" , placeholder="제목을 입력하세요" />
@@ -36,142 +37,160 @@
 
     <main>
       <section>
-        <ul>
-          <li>
-            <div>
+        <div class="movies">
+          <h2>영화목록</h2>
+          <ul>
+            <li>
               <div>
-                <img src=".\img\venom.jpg" alt="" />
+                <div>
+                  <img src=".\img\venom.jpg" alt="" />
+                </div>
+                <div class="movie-info">
+                  <div>
+                    <div>베놈2 : 렛 데어 비 카니지</div>
+                    <hr />
+                    <div>액션</div>
+                    <div>앤디 서키스</div>
+                    <div>97분</div>
+                  </div>
+                  <div>
+                    <button class="zzim-button">찜</button>
+                  </div>
+                </div>
               </div>
+            </li>
+            <li>
               <div>
-                <div>베놈2 : 렛 데어 비 카니지</div>
-                <hr style="width: 7cm; margin: 0;" />
-                <div>액션</div>
-                <div>앤디 서키스</div>
-                <div>97분</div>
+                <div>
+                  <img src=".\img\dune.jpg" alt="" />
+                </div>
+                <div class="movie-info">
+                  <div>
+                    <div>듄</div>
+                    <hr />
+                    <div>모험</div>
+                    <div>드니 뷜뇌브</div>
+                    <div>155분</div>
+                  </div>
+                  <div>
+                    <button class="zzim-button">찜</button>
+                  </div>
+                </div>
               </div>
+            </li>
+            <li>
               <div>
-                <button>찜</button>
+                <div>
+                  <img src=".\img\eternals.jpg" alt="" />
+                </div>
+                <div class="movie-info">
+                  <div>
+                    <div>이터널스</div>
+                    <hr />
+                    <div>액션</div>
+                    <div>클로이자오</div>
+                    <div>155분</div>
+                  </div>
+                  <div>
+                    <button class="zzim-button">찜</button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <div>
+            </li>
+            <li>
               <div>
-                <img src=".\img\dune.jpg" alt="" />
+                <div>
+                  <img src=".\img\parasite.jpg" alt="" />
+                </div>
+                <div class="movie-info">
+                  <div>
+                    <div>기생충</div>
+                    <hr />
+                    <div>드라마</div>
+                    <div>봉준호</div>
+                    <div>131분</div>
+                  </div>
+                  <div>
+                    <button class="zzim-button">찜</button>
+                  </div>
+                </div>
               </div>
+            </li>
+            <li>
               <div>
-                <div>듄</div>
-                <hr style="width: 7cm; margin: 0;" />
-                <div>모험</div>
-                <div>드니 뷜뇌브</div>
-                <div>155분</div>
+                <div>
+                  <img src=".\img\tomb_of_the_river.jpg" alt="" />
+                </div>
+                <div class="movie-info">
+                  <div>
+                    <div>강릉</div>
+                    <hr />
+                    <div>범죄</div>
+                    <div>윤영빈</div>
+                    <div>119분</div>
+                  </div>
+                  <div>
+                    <button class="zzim-button">찜</button>
+                  </div>
+                </div>
               </div>
+            </li>
+            <li>
               <div>
-                <button>찜</button>
+                <div>
+                  <img src=".\img\venom.jpg" alt="" />
+                </div>
+                <div class="movie-info">
+                  <div>
+                    <div>베놈2</div>
+                    <hr />
+                    <div>액션</div>
+                    <div>클로이자오</div>
+                    <div>155분</div>
+                  </div>
+                  <div>
+                    <button class="zzim-button">찜</button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <div>
+            </li>
+            <li>
               <div>
-                <img src=".\img\eternals.jpg" alt="" />
+                <div>
+                  <img src=".\img\harrypoter_room.jpg" alt="" />
+                </div>
+                <div class="movie-info">
+                  <div>
+                    <div>해리포터</div>
+                    <hr />
+                    <div>드라마</div>
+                    <div>JK롤링</div>
+                    <div>155분</div>
+                  </div>
+                  <div>
+                    <button class="zzim-button">찜</button>
+                  </div>
+                </div>
               </div>
-              <div>
-                <div>이터널스</div>
-                <hr style="width: 7cm; margin: 0;" />
-                <div>액션</div>
-                <div>클로이자오</div>
-                <div>155분</div>
-              </div>
-              <div>
-                <button>찜</button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div>
-                <img src=".\img\parasite.jpg" alt="" />
-              </div>
-              <div>
-                <div>기생충</div>
-                <hr style="width: 7cm; margin: 0;" />
-                <div>드라마</div>
-                <div>봉준호</div>
-                <div>131분</div>
-              </div>
-              <div>
-                <button>찜</button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div>
-                <img src=".\img\tomb_of_the_river.jpg" alt="" />
-              </div>
-              <div>
-                <div>강릉</div>
-                <hr style="width: 7cm; margin: 0;" />
-                <div>범죄</div>
-                <div>윤영빈</div>
-                <div>119분</div>
-              </div>
-              <div>
-                <button>찜</button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div>
-                <img src=".\img\venom.jpg" alt="" />
-              </div>
-              <div>
-                <div>베놈2</div>
-                <hr style="width: 7cm; margin: 0;" />
-                <div>액션</div>
-                <div>클로이자오</div>
-                <div>155분</div>
-              </div>
-              <div>
-                <button>찜</button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div>
-                <img src=".\img\harrypoter_room.jpg" alt="" />
-              </div>
-              <div>
-                <div>해리포터</div>
-                <hr style="width: 7cm; margin: 0;" />
-                <div>드라마</div>
-                <div>JK롤링</div>
-                <div>155분</div>
-              </div>
-              <div>
-                <button>찜</button>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="zzim">
+          <h3>찜리스트</h3>
+          <div>아직 찜한 영화가 없습니다...</div>
+        </div>
       </section>
       <aside></aside>
     </main>
 
     <footer>
-      <div>
-        <h3>찜리스트</h3>
-        <div>아직 찜한 영화가 없습니다...</div>
-      </div>
-      <ul>
+      <ul class="footer-list">
         <li><a href="#">개인정보처리방침</a></li>
         <li><a href="#">이용약관</a></li>
         <li><a href="#">오시는길</a></li>
-        <li><a href="#">&copy; SSAFY</a></li>
+        <li><a href="#">&copy; SSAFY_Daejeon_4_Daen</a></li>
       </ul>
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>

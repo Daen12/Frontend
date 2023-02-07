@@ -4,10 +4,9 @@
   box-sizing: border-box;
   font-weight: bold;
 }
-ul{
+ul {
   padding-inline-start: 0;
 }
-
 .nav-ul {
   border-bottom: 1px solid gray;
   margin: auto;
@@ -17,7 +16,6 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 .nav-ul a {
   font-weight: lighter;
@@ -55,7 +53,7 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
 }
-main{
+main {
   width: 85%;
   margin: auto;
 }
@@ -76,15 +74,15 @@ button {
   border: 0;
 }
 
-article{
+article {
   display: flex;
 }
 
-.article{
+.article {
   margin-top: 100px;
-  margin-right: 150px;
+  margin-right: 5%;
+  margin-left: 7%;
   margin-bottom: 100px;
-  margin-left: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
@@ -94,90 +92,93 @@ article{
   display: block;
   line-height: 30px;
 }
-.article div:first-child{
+.article div:first-child {
   font-size: 33px;
   text-align: center;
   color: rgb(92, 92, 9);
 }
-.article div:nth-child(5){
+.article div:nth-child(5) {
   margin: auto;
   text-align: center;
+  padding: 10px;
   width: 100%;
-  height: 100px;
-  line-height: 70px;
+  height: 150px;
   background-color: whitesmoke;
   border-radius: 10px;
 }
 
-.choose{
+.choose {
   margin-top: 15px;
-  margin : auto;
+  margin: 0, auto;
   display: inline-block;
   text-align: center;
 }
-.choose input[type=button]{
+.choose input[type="button"] {
+  margin-top: 10px;
   width: 204px;
-  height: 25px;
-  background-color: rgb(179, 243, 61);
-  border: 1px solid gray;
+  height: 28px;
+  background-color: rgb(230, 243, 51);
+  border: 1px solid rgb(207, 230, 8);
   border-radius: 5px;
 }
-.cart{
+.cart {
   margin-top: 50px;
-  flex :1;
+  flex: 1;
 }
 .cart input[type="button"] {
   cursor: pointer;
   margin-top: 10px;
   width: 200px;
   height: 30px;
-  background-color: yellowgreen;
+  background-color: rgb(230, 243, 51);
   border: 0;
   border-radius: 5px;
 }
-.product{
+.amount [type="number"] {
+  width: 100px;
+  height: 25px;
+}
+.product {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
-.review-header{
+.review-header {
   margin: auto;
   width: 70%;
 }
-.review-header ul{
+.review-header ul {
   border-top: 2px solid gray;
   margin-top: 10px;
   font-weight: light;
   font-size: 15px;
   line-height: 30px;
-
 }
-.review-header form{
+.review-header form {
   margin-top: 20px;
 }
-.review-header input[type="text"]{
+.review-header input[type="text"] {
   margin-top: 10px;
   width: 500px;
   height: 30px;
   margin-bottom: 10px;
 }
-footer{
+footer {
   margin-top: 20px;
   position: relative;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   height: 60px;
   line-height: 60px;
   background-color: olivedrab;
 }
-.footer-list{
+.footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.footer-list *{
+.footer-list * {
   font-size: 13px;
   color: whitesmoke;
   font-weight: light;
