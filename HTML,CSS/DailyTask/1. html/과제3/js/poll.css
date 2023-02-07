@@ -14,28 +14,36 @@ h3 {
 }
 
 form {
-  margin: auto;
+  /* margin: auto; */
   margin-left: 10px;
   font-size: 18px;
   font-weight: bold;
   color: rgb(84, 6, 84);
 }
 .questionBox {
+  /* position: relative; */
+  /* left: 50%; */
+  margin: auto;
   margin-top: 5px;
   height: 30px;
   width: 300px;
 }
 .question {
-  flex: 2;
   margin-bottom: 30px;
 }
 .addBtn {
+  cursor: pointer;
 }
 .answer {
-  width: 250px;
+  margin-top: 5px;
+  width: 270px;
   height: 20px;
 }
-.createBtn {
+.delete{
+  height: 25px;
+  margin-left: 5px;
+}
+.submitBtn {
   position: relative;
   color: white;
   margin: 30px auto;

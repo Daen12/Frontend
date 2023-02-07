@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Poll!</title>
     <link rel="stylesheet" href="poll.css" />
   </head>
   <body>
@@ -20,15 +20,18 @@
             placeholder="질문내용..."
           />
         </div>
-        <div class="answers">
+        <div class="answerTab">
           <span>답변항목</span>
           <input id="addBtn" class="addBtn" type="button" value="추가" />
-          <br />
-          <input id="answer" class="answer" type="text" />
-          <input type="button" value="삭제" />
+          <!-- <br /> -->
+          <div class="answers">
+            <input id="answer" class="answer" type="text" />
+            <input class="delete" type="button" value="삭제" />
+          </div>
         </div>
       </form>
-      <div class="createBtn">투표생성</div>
+      <div class="submitBtn">투표생성</div>
     </div>
   </body>
+  <script src="poll.js"></script>
 </html>

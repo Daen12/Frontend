@@ -64,15 +64,31 @@ regionalStores.forEach((store) => {
     store.addEventListener("click", regionFold);
 });
 
-//관리자메뉴 클릭 시 구현되는 기능들
+//관리자메뉴 클릭 시 창 띄우기
 const manageBtn = document.getElementById("manageBtn");
 
 function makePoll() {
     let option = "width = 400px, height = 400px";
     let url = "js/pollmake.html";
     let name = "popup";
-    console.log("popup!!!");
     window.open(url, name, option);
 }
 
 manageBtn.addEventListener("click", makePoll);
+
+//로컬스토리지에서 값 받아와서 투표용지 생성
+const question = window.localStorage.getItem("question");
+const answerList = window.localStorage.getItem("answerList").split(",");
+
+const vote_question = document.querySelector(".vote_question");
+vote_question.innerText = question;
+
+const first = document.getElementById("first");
+const second = document.getElementById("second");
+const third = document.getElementById("third");
+const fourth = document.getElementById("fourth");
+
+first.innerText = answerList[0];
+second.innerText = answerList[1];
+third.innerText = answerList[2];
+fourth.innerText = answerList[3];
