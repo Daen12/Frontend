@@ -1,0 +1,50 @@
+.container {
+  margin: auto;
+  border: 2px solid rgb(173, 173, 173);
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: darkblue;
+}
+.questionBox {
+  margin-top: 5px;
+  height: 30px;
+  width: 300px;
+}
+.question {
+  flex: 2;
+  margin-bottom: 30px;
+}
+.addBtn {
+}
+.answer {
+  width: 250px;
+  height: 20px;
+}
+.createBtn {
+  position: relative;
+  color: white;
+  margin: 30px auto;
+  bottom: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(121, 84, 121);
+  border: 1px solid black;
+  border-radius: 5px;
+}
