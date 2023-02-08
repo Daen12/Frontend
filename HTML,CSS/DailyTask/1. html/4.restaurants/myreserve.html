@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>예약관리</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css" />
+
 </head>
 <body>
-    
+  <header>
+    <div>
+      <a href="#" class="title-size">딜리싸피</a>
+    </div>
+    <div>
+      <form action="#">
+        <input type="text" placeholder="검색어를 입력해주세요"/>
+        <input type="submit" placeholder="검색" />
+      </form>
+    </div>
+    <div>
+      <div class="header_nav_menuitem">
+        <a class="nav_link" href="#" id="a-login">로그인</a>
+      </div>
+      <div class="header_nav_menuitem">
+        <a class="nav_link" href="#" id="a-logout">로그아웃</a>
+      </div>
+      <div class="header_nav_menuitem">
+        <a class="nav_link" href="#" >마이페이지</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="category">
+        <strong>
+          <a href="#">전체 |</a>
+          <a href="#">한식 |</a>
+          <a href="#">중식 |</a>
+          <a href="#">양식 |</a>
+          <a href="#">일식 |</a>
+          <a href="#">퓨전 |</a>
+          <a href="#">디저트, 카페</a>
+        </strong>
+      </div>
+      <div class="reserve-list">
+        <p>예약 내역</p>
+        <!-- 여기에 로컬스토리지 데이터를 저장 -->
+        <ul class="reserve-list-ul">
+
+        </ul>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul class="footer-list">
+      <li class="footer">개인정보처리방침</li>
+      <li class="footer">이용약관</li>
+      <li class="footer">오시는길</li>
+      <li>Created by the SSAFY team / &copy; 2022</li>
+    </ul>
+  </footer>
+
+  <script src="js/reserve.js"></script>
 </body>
 </html>
