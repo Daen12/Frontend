@@ -54,8 +54,8 @@ function nameLater() {
     //랜덤으로 카드 설정
     cardArray.sort(() => 0.5 - Math.random());
 
-    let grid = document.querySelector(".grid");
-    let resultDisplay = document.querySelector("#result");
+    const grid = document.querySelector(".grid");
+    const resultDisplay = document.querySelector("#result");
     let choiceName = [];
     let choiceId = [];
     let cardsWon = [];
@@ -63,7 +63,7 @@ function nameLater() {
     //보드 만들기
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
-            let card = document.createElement("img");
+            const card = document.createElement("img");
             card.setAttribute("src", "./img/ssafy.png");
             card.setAttribute("id", i);
             card.addEventListener("click", flip);
@@ -73,12 +73,18 @@ function nameLater() {
     //check for matches
     function matchCheck() {
         let cards = document.querySelectorAll("img");
-        let optOneId = choiceName[0];
-        let optTwoId = choiceName[1];
-        if (choiceName[0] === choiceName[1]) {
+        let optOneId = choiceId[0];
+        let optTwoId = choiceId[1];
+        if (optOneId == optTwoId) {
+            cards[optOneId].setAttribute("src", "img/ssafy.png");
+            cards[optTwoId].setAttribute("src", "img/ssafy.png");
+            alert("같은 사진을 클릭했습니다");
+        } else if (choiceName[0] === choiceName[1]) {
             alert("일치하는 사진을 찾았습니다!");
             cards[optOneId].setAttribute("src", "img/black.png");
             cards[optTwoId].setAttribute("src", "img/black.png");
+            cards[optOneId].removeEventListener("click", flipCard);
+            cards[optTwoId].removeEventListener("click", flipCard);
             cardsWon.push(choiceName);
         } else {
             //만약에 매칭되지 않는다면 다시 Tree로 바꾸기
