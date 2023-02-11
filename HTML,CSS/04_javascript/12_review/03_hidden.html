@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        display: inline-flex;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+      p {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>display: none 위에 있어요.</p>
+      <!-- display와 visibility의 차이 : -->
+      <!-- visibility는 자리를 차지함 -->
+      <button style="display: none">내가 보이나요?</button>
+      <p>display: none 밑에 있어요.</p>
+    </div>
+    <div class="container">
+      <p>visibility: hidden 위에 있어요</p>
+      <button style="visibility: hidden">나도 보이나요?</button>
+      <p>visibility: hidden 밑에 있어요</p>
+    </div>
+  </body>
+</html>

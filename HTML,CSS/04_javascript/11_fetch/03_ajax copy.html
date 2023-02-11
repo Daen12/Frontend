@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text 파일 이용</title>
+  </head>
+  <body>
+    <h1>서버에서 받은 메시지</h1>
+    <!-- 서버에서 받은 데이터 밑에태그에 넣을것임 -->
+    <div id="msg-view"></div>
+    <button id="get-data">요청</button>
+
+    <script>
+      // let xhr; //껍데기 준비 => 함수안에서 접근 가능하도록 상위블록으로 빼놓은것!
+
+      //1. 클라이언트에서 요청이 발생해야한다.
+      document.querySelector("#get-data").addEventListener("click", () => {
+        fetch("./data/hello.txt")
+          .then((response) => response.text())
+          .then(
+            (body) => (document.querySelector("#msg-view").innerHTML = body)
+          );
+      });
+      // xhr = new XMLHttpRequest();
+      // xhr.onreadystatechange = responseMsg; // = 콜백함수
+      // xhr.open("GET", "./data/hello.txt", true);
+      // xhr.send();
+      // function responseMsg() {
+      //   if (xhr.readyState == 4) {
+      //     if (xhr.status == 200) {
+      //       document.querySelector("#msg-view").innerHTML = xhr.responseText;
+      //     } else {
+      //       console.log("정상적으로 데이터를 수신하지 못했다.");
+      //     }
+      //   }
+      // }
+    </script>
+  </body>
+</html>

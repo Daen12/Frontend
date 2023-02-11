@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">클릭</button>
+    <a href="https://www.naver.com">네이버</a>
+    <!-- javascript -->
+    <script>
+      //쿼리 선택하고
+      let btn = document.querySelector("#btn");
+      //리스너 add
+      btn.addEventListener("click", doAction);
+      //뒤에 지정한 함수가 실제 실행내용
+      function doAction() {
+        alert("클릭완료");
+      }
+
+      //사용자 지정 이벤트
+      let a = document.querySelector("a");
+      a.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log(event);
+      });
+    </script>
+  </body>
+</html>

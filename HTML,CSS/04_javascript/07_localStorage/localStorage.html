@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로컬 스토리지 실습</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="input"
+      style="width: 350px"
+      placeholder="localStorage에 저장할 값 입력"
+    />
+    <button id="create">등록</button>
+    <button id="read">조회</button>
+    <button id="delete">삭제</button>
+    <div id="display">
+      <!-- 여기에 로컬스토리지에 저장된 값을 보여줍니다. -->
+    </div>
+    <script>
+      //삭제 이벤트 처리
+      const createBtn = document.querySelector("#create");
+
+      function logic() {
+        const input = document.querySelector("input");
+        let value = input.value;
+        // window.localStorage.setItem("1", value);
+        // window.sessionStorage.setItem("yay", value);
+
+        //로컬스토리지에는 문자열만 저장되므로
+        //json객체를 이용해서 json문자열로 바꾼뒤에
+        //localStorage에 넣으면
+        let jsonStr = JSON.stringify(input.value);
+        window.localStorage.setItem("1", jsonStr);
+      }
+      createBtn.addEventListener("click", logic);
+
+      //조회이벤트
+      let readBtn = document.querySelector("#read");
+      readBtn.addEventListener("click", () => {
+        //get local storage value
+        //use 'display' tag to show the value brought
+        let str = localStorage.getItem("1");
+        //let은 블록스코프이므로 상위변수로 빼기
+        let displayDiv = document.querySelector("#display");
+
+        //없으면 null이므로 null체크를 한다.
+        if (str) {
+          str = str.replace(/\"/g, "");
+          displayDiv.innerText = str;
+        } else {
+          displayDiv.innerText = "해당하는 키의 값이 없습니다.";
+        }
+      });
+
+      //삭제이벤트 처리
+      let deleteBtn = document.querySelector("#delete");
+      deleteBtn.addEventListener("click", deleteHandler);
+
+      function deleteHandler() {
+        //로컬스토리지에서 값을 삭제
+        localStorage.removeItem("1");
+      }
+
+      //하나의 문자열이 아닌 문자열의 배열을 저장하려면?
+      //실습 시간에 도전하기!!
+      //localStorage에서 getItem("arr") 가져와서,
+      //만약 null이면 빈 배열을 만들고
+      //null이 아니면 문자열을 파싱해서 배열로 만든다.
+      //그 배열에다가 push 메서드로 문자열을 추가한다.
+      //생성된 새로운 배열을 문자열로 바꾼 후(JSON.stringify) localStorage.setItem("arr", str) 쏘아준다.
+    </script>
+  </body>
+</html>

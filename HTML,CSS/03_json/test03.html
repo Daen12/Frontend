@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // JSON 문자열 => 자바스크립트 객체
+    var str1 = '{"name":"Hong","age":24,"hungry":false,"mbti":null}';
+    var str2 = '{"name":"Jung","age":25,"hungry":true,"mbti":null}';
+
+    // JSON.parse()
+    var p1 = JSON.parse(str1);
+    var p2 = JSON.parse(str2);
+    console.log(p1);
+    console.log(p2);
+
+  </script>
+</body>
+</html>

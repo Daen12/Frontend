@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="search-input" />
+    <button id="search-btn">검색</button>
+    <hr />
+    <h2>검색 결과</h2>
+    <ul id="search-result-list">
+      <!-- 이 안에 목록을 li로 넣기 / 이미지랑 -->
+    </ul>
+    <script>
+      const URL = "https://www.googleapis.com/youtube/v3/search";
+      const API_KEY = "AIzaSyBYtaQiSKkik_dpGwRejZeVC1nJivPSqy8";
+
+      const btn = document.querySelector("#search-btn");
+      btn.addEventListener("click", () => {
+        //검색어를 가져오기
+        const inputTag = document.querySelector("#search-input");
+        let keyword = inputTag.value;
+        // console.log(
+        //   `${URL}?key=${API_KEY}&part=snippet&q=${keyword}&tpe=video&maxResult=20`
+        // );
+        //검색어를 이용해서 fetch로 요청하기
+        //promise를 반환
+        fetch(
+          `${URL}?key=${API_KEY}&part=snippet&q=${keyword}&tpe=video&maxResults=20`
+        )
+          .then((res) => res.json())
+          //도착한 결과를 콘솔에 찍기! item에 우리가 원하는 내용이 있음.
+          // .then((body) => console.log(body));
+          .then((body) =>
+            body.items.forEach((el) => {
+              const ulTag = document.querySelector("#search-result-list");
+              let liTag = document.createElement("li");
+              let imgTag = document.createElement("img");
+              imgTag.src = el.snippet.thumbnails.default.url;
+              liTag.appendChild(imgTag);
+              ulTag.appendChild(liTag);
+            })
+          );
+      });
+
+      //요청 결과가 도착하면 리스트에 추가하기
+    </script>
+  </body>
+</html>

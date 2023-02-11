@@ -1,0 +1,68 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+.wrap {
+  /*화면 너무 커서 컨텐츠 크기 조절용*/
+  width: 900px; /*전체 너비*/
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+.main_sub {
+  /*운동영상 리뷰*/
+  font-size: 30px;
+  font-weight: bold;
+}
+.button_all {
+  display: flex;
+  margin-left: 20px;
+}
+.button_sub {
+  display: flex;
+  margin-left: 600px;
+}
+.button_sub > button {
+  margin-left: 20px;
+}
+.textbox {
+  width: 900px;
+  height: 350px;
+  margin-top: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.textbox li:first-child {
+  font-size: 50px;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 30px;
+}
+.textbox li:not(first-child) {
+  color: gray;
+}
+.border {
+  border: solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.5);
+}
+.textbox ul {
+  margin: 40px;
+}
+.main_content {
+  text-align: center;
+  color: gray;
+}
+
+/*--------- 모달 스타일 -----------------*/
+.modal-title.fs-5 {
+    margin-left: 165px;
+  }
+/*---------------------------------*/
+  

@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px dotted black; */
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더 */
+
+header {
+  padding: 10px;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+.homebutton {
+  display: flex;
+  text-align: start;
+  font-weight: bolder;
+  position: relative;
+  top: 40px;
+  margin: 0% 5%;
+}
+
+.h-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.h-box > div {
+  font-size: 20px;
+}
+
+header i {
+  color: skyblue;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+
+/* 메인 구간 */
+/* 영상 송출부분 */
+
+.m-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 3% 0;
+}
+.m-video-mockup {
+  width: 400px;
+  height: 300px;
+  background-color: brown;
+}
+
+/* 리뷰 구간 */
+
+.m-review-borad {
+  width: 100%;
+}
+
+/* 리뷰 헤더 */
+.m-review-borad-header {
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.modal-title {
+  margin-left: 165px;
+}
+
+.m-review-borad-search {
+  border-bottom: 1px solid grey;
+}
+
+.m-review-borad-search > input {
+  border: none;
+}
+.btn .btn-outline-primary {
+  color: skyblue;
+}
+
+/* 리뷰 리스트 구간 */
+
+.m-review-board-list {
+  width: 100%;
+  padding: 1% 5%;
+}
+
+.m-review-borad-table {
+  width: 100%;
+}
+
+/* 리뷰를 담는 테이블 */
+
+table {
+  width: 100%;
+}
+
+thead tr {
+  border-bottom: 1px solid grey;
+  height: 60px;
+}
+
+thead tr td {
+  padding-left: 10px;
+}
+
+tbody tr td {
+  height: 60px;
+  padding-left: 20px;
+}
+
+#table-title {
+  width: 50%;
+}
+
+#table-no {
+  width: 5%;
+}
+
+#table-user,
+#table-views {
+  width: 10%;
+}
+
+#table-time {
+  width: 20%;
+}
+
+/* 푸더 */
+footer {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-box {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+}

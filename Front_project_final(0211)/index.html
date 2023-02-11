@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSAFIT!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SSAFIT!</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-person-plus-fill"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="헬스장 찾기"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselBanner" class="carousel slide">
+      <div class="carousel-inner" style="height: 450px;">
+        <div class="banner">
+          <div class="welcome">Welcome to SSAFIT, your home fitness center</div>
+          <img class="welcomeImg"
+            src="https://seoul.intercontinental.com/iccoex/kor/assets/img/img-facility-cosmopolitan-fitness-club.jpg"
+            class="d-block w-100"
+            alt="..." 
+          />
+        </div>
+    </div>
+
+    <!-- 메인화면 컨테이너 -->
+    <div class="container">
+      <form class="d-flex video-search" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="운동 제목 검색"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="title">최근 인기 영상</div>
+
+      <!-- 최근 인기 영상 -->
+      <div id="Carousel-videos1" class="carousel slide">
+        <div class="carousel-inner videos">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  src="https://img.youtube.com/vi/PjGcOP-TQPE/0.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  "11자복근 복부 최고의 운동 [복근 핵매운맛]"
+                </p>
+                <a href="#" class="btn btn-primary">part</a>
+                <span id="channelName">ThankouBUBU</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  src="https://img.youtube.com/vi/swRNeYw1JkY/0.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  "하루 15분! 전신 칼로리 불태우는 다이어트"
+                </p>
+                <a href="#" class="btn btn-primary">part</a>
+                <span id="channelName">ThankouBUBU</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  src="https://img.youtube.com/vi/gMaB-fG4u4g/0.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  "전신 다이어트 최고의 운동 [칼소폭 찐 핵핵매"
+                </p>
+                <a href="#" class="btn btn-primary">part</a>
+                <span id="channelName">ThankouBUBU</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#Carousel-videos"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#Carousel-videos1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="title second">운동 부위 선택</div>
+      <button
+        id="partBtn"
+        type="button"
+        class="btn btn-outline-primary"
+        disabled
+      >
+        전신
+      </button>
+      <button
+        id="partBtn"
+        type="button"
+        class="btn btn-outline-primary"
+        disabled
+      >
+        상체
+      </button>
+      <button
+        id="partBtn"
+        type="button"
+        class="btn btn-outline-primary"
+        disabled
+      >
+        하체
+      </button>
+      <button
+        id="partBtn"
+        type="button"
+        class="btn btn-outline-primary"
+        disabled
+      >
+        복부
+      </button>
+      <!-- 두번쨰 카루셀 영상 -->
+      <!-- <div id="Carousel-videos2" class="carousel slide" data-bs-ride="carousel"> -->
+        <div class="inner videos">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img id="video-img" src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text video-title">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary video-button">part</a>
+                <span id="channelName">channelName</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 두번째 카루셀의 버튼 -->
+        <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#Carousel-videos2"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#Carousel-videos2"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      <!-- </div> -->
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+</html>

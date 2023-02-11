@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // globalThis : ECMAScript2020(ES11)에서 도입된 전역객체 식별자
+
+      // console.log(globalThis === this);
+      // console.log(globalThis === window);
+      // console.log(globalThis === self);
+      // console.log(globalThis === frames);
+
+      //globalThis != this
+      // console.log(this === window);
+      // console.log(window.self === window);
+      // console.log(window.frames === window);
+
+      // this.alert("나는 window");
+      // frames.alert("나도 window");
+      // self.alert("나도 window");
+
+      // window.alert("경고");
+
+      // let a = window.confirm("맞으면 확인");
+      // console.log(a);
+      // if (a) {
+      //   window.alert("확인을 눌렀습니다.");
+      // } else {
+      //   window.alert("취소를 눌렀습니다.");
+      // }
+
+      // let b = window.prompt("나의 취미는?", "멍때리기");
+      // console.log(b);
+
+      //blank는 새로운 창 띄우고, self는 자기자신의 창을 띄움.
+      // window.open("https://www.naver.com", "_blank");
+
+      // window.open("https://www.naver.com", "_self");
+
+      //전역객체 의 프로퍼티 참조시 window. 생략 가능!
+      // var num = window.parseInt("1234");
+      // console.log(typeof num);
+      // let num2 = parseInt("1234");
+      // console.log(window.num);
+      //let으로 선언한 num2는 undefined
+      // --> 여기선 없으면 그냥 undefined가 튀어나옴.
+      // console.log(window.num2);
+      // console.log(window.parseInt === parseInt);
+
+      // let num3 = parseFloat("134.213");
+      // let num4 = parseInt("134.123");
+      // console.log(num3);
+      // console.log(num4);
+
+      // window.fun1();
+
+      // function fun1() {
+      //   console.log("function 1 called.");
+      // }
+      // function fun2() {
+      //   console.log("3초후에 호출합니다.");
+      // }
+
+      // function fun3() {
+      //   console.log("5초마다 호출합니다.");
+      // }
+
+      // window.setTimeout(fun2, 3000);
+      // window.setInterval(fun3, 5000);
+    </script>
+  </body>
+</html>

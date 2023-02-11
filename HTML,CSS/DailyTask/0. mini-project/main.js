@@ -72,7 +72,7 @@ class MatchGame {
         //랜덤으로 카드 설정
         cardArray = this.cardArray;
         matchCheck = this.matchCheck;
-        // this.cardArray.sort(() => 0.5 - Math.random());
+        this.cardArray.sort(() => 0.5 - Math.random());
 
         //보드 만들기, cardArray의 길이는 12.
         for (let i = 0; i < cardArray.length; i++) {

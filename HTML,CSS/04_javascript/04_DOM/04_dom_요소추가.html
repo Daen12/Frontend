@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="list">this has id list</div>
+    <script>
+      //img태그 만들었는데 append 되지않고 홀로 떨어져있는 상태.
+      let img = document.createElement("img");
+      let parent = document.getElementById("list");
+      console.log(img);
+      console.log(parent);
+      parent.appendChild(img); //append되었다!
+      // parent.append(img);
+      img.setAttribute("src", "./images/burger.jpg");
+      img.setAttribute("width", "200px");
+
+      let h1 = document.createElement("h1");
+      let msg = document.createTextNode("안녕하세요.");
+      h1.appendChild(msg);
+      parent.appendChild(h1);
+      h1.innerHTML = "<div>나는 디브 태그</div>";
+      //요건 전체가 텍스트화됨. <div>도 같이 출력
+      // h1.innerText = "<div>나는 디브 태그</div>";
+
+      parent.removeChild(h1);
+    </script>
+  </body>
+</html>

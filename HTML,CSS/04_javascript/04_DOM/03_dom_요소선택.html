@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h2>테스트</h2>
+      <!-- id는 class와 달리 공백 문자로 구분하여 여러 개의 값을 가질 수 없다 -->
+      <div id="a" class="a b">지역</div>
+      <p class="b">서울</p>
+      <p name="c">대전</p>
+      <div class="d b">광주</div>
+      <div name="e">구미</div>
+      <p class="e">부울경</p>
+    </section>
+    0.3-0.2 // 00
+    <script>
+      // HTML 문서 내에 중복된 id를 갖더라도 에러가 발생하지는 않지만
+      // getElementById 메서드는 언제나 단 하나의 요소만 반환
+      // let e = document.getElementById("a");
+      // console.log(e);
+      // e.style.color = "green";
+      // let e2 = document.getElementsByClassName("b");
+      // console.log(e2);
+
+      // 모든 html 요소 노드는
+      // style 프로퍼티가 있어서 inline 스타일에 접근, 수정 가능하다.
+
+      // for (let i = 0; i < e2.length; i++) {
+      //   e2[i].style.color = "red";
+      // }
+
+      // document.getElementsByName();
+      // document.getElementsByTagName();
+
+      // 하나를 호출!
+      // let e3 = document.querySelector("div");
+      // console.log(e3);
+      // e3.style.background = "yellow";
+
+      // let e4 = document.querySelector("[name='c']");
+      // console.log(e4);
+      // e4.style.background = "blue";
+
+      // let e5 = document.querySelectorAll("div");
+      // console.log(e5);
+
+      // for (let i = 0; i < e5.length; i++) {
+      //   e5[i].style.backgroundColor = "pink";
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- 이거 하나 클릭 = span, button, div, body를 모두 클릭한것과 같음 -->
+      <button><span>Click me!</span></button>
+    </div>
+    <pre id="output"></pre>
+    <script>
+      const output = document.querySelector("#output");
+      function handleClick(e) {
+        //클릭 될때마다 텍스트 추가!
+        //버블링으로 생성됨. span -> body
+        output.textContent += `You clicked on a ${e.currentTarget.tagName} element\n`;
+      }
+
+      const container = document.querySelector("#container");
+      const button = document.querySelector("button");
+      const span = document.querySelector("span");
+
+      //이벤트 리스너를 모든 단계에서 등록함.
+      document.body.addEventListener("click", handleClick);
+      container.addEventListener("click", handleClick);
+      button.addEventListener("click", handleClick);
+      span.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

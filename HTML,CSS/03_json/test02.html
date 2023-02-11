@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 자바스크립트 객체
+    // { } 안에 key, value의 쌍으로
+    var p1 = {
+      name: "Hong",
+      age: 24,
+      hungry: false,
+      mbti: null,
+    };
+    
+    var p2 = {
+      name: "Jung",
+      age: 25,
+      hungry: true,
+      mbti: null
+    };
+
+    // 자바스크립트에서 출력
+    console.log(p1);
+    console.log(p2);
+
+    // 자바스크립트 객체 => JSON(문자열)
+    // JSON.stringify()
+    var str1 = JSON.stringify(p1);
+    var str2 = JSON.stringify(p2);
+    console.log(str1);
+    console.log(str2);
+
+
+  </script>
+</body>
+</html>

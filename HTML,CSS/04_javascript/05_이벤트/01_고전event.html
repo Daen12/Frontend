@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="alert('누르지말라니까')">누르지마시오</button>
+  </body>
+  <button onclick="doSomething()">함수실행</button>
+  <button id="btn">버튼</button>
+  <script>
+    function doSomething() {
+      let sum = 0;
+      for (let i = 0; i < 10; i++) {
+        sum += i;
+      }
+      alert(sum);
+    }
+
+    let btn = document.querySelector("#btn");
+    btn.onclick = doAction;
+    function doAction() {
+      alert("클릭했다.");
+    }
+  </script>
+</html>
